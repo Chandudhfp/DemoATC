@@ -14,7 +14,7 @@ pipeline {
         }
         stage('contineous deploy') {
             steps {
-               sh 'sshpass -p "chandu" scp target/DemoATR.war chandu@172.17.0.3:/opt/apache-tomcat-9.0.56/webapps'
+               sh 'cp target/DemoATR.war /opt/apache-tomcat-9.0.56/webapps'
             }
         }
         
