@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('contineous download master') {
+        stage('contineous download blaster') {
             steps {
                git 'https://github.com/Chandudhfp/DemoATC.git'
             }
